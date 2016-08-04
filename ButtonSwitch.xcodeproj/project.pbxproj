@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		04E204841D52B68E0078A2FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204831D52B68E0078A2FE /* AppDelegate.swift */; };
-		04E204861D52B68E0078A2FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204851D52B68E0078A2FE /* ViewController.swift */; };
 		04E204891D52B68E0078A2FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E204871D52B68E0078A2FE /* Main.storyboard */; };
 		04E2048B1D52B68E0078A2FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E2048A1D52B68E0078A2FE /* Assets.xcassets */; };
 		04E2048E1D52B68E0078A2FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E2048C1D52B68E0078A2FE /* LaunchScreen.storyboard */; };
 		04E204991D52B68E0078A2FE /* ButtonSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204981D52B68E0078A2FE /* ButtonSwitchTests.swift */; };
 		04E204A41D52B68E0078A2FE /* ButtonSwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204A31D52B68E0078A2FE /* ButtonSwitchUITests.swift */; };
+		04E204B21D52C76F0078A2FE /* ParametersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204B11D52C76F0078A2FE /* ParametersController.swift */; };
+		04E204B41D52C7C70078A2FE /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204B31D52C7C70078A2FE /* Parameter.swift */; };
+		04E204B61D52C9E70078A2FE /* ParameterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204B51D52C9E70078A2FE /* ParameterTableViewCell.swift */; };
+		04E204BB1D52CF1F0078A2FE /* ParametersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E204BA1D52CF1F0078A2FE /* ParametersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		04E204801D52B68E0078A2FE /* ButtonSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E204831D52B68E0078A2FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04E204851D52B68E0078A2FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04E204881D52B68E0078A2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04E2048A1D52B68E0078A2FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E2048D1D52B68E0078A2FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		04E2049F1D52B68E0078A2FE /* ButtonSwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonSwitchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E204A31D52B68E0078A2FE /* ButtonSwitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSwitchUITests.swift; sourceTree = "<group>"; };
 		04E204A51D52B68E0078A2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E204B11D52C76F0078A2FE /* ParametersController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParametersController.swift; sourceTree = "<group>"; };
+		04E204B31D52C7C70078A2FE /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		04E204B51D52C9E70078A2FE /* ParameterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterTableViewCell.swift; sourceTree = "<group>"; };
+		04E204BA1D52CF1F0078A2FE /* ParametersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParametersViewController.swift; path = ../ParametersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				04E204831D52B68E0078A2FE /* AppDelegate.swift */,
-				04E204851D52B68E0078A2FE /* ViewController.swift */,
 				04E204871D52B68E0078A2FE /* Main.storyboard */,
+				04E204B81D52CA910078A2FE /* Controller */,
+				04E204B91D52CACA0078A2FE /* Views */,
+				04E204B71D52CA250078A2FE /* Model */,
 				04E2048A1D52B68E0078A2FE /* Assets.xcassets */,
 				04E2048C1D52B68E0078A2FE /* LaunchScreen.storyboard */,
 				04E2048F1D52B68E0078A2FE /* Info.plist */,
@@ -123,6 +131,31 @@
 				04E204A51D52B68E0078A2FE /* Info.plist */,
 			);
 			path = ButtonSwitchUITests;
+			sourceTree = "<group>";
+		};
+		04E204B71D52CA250078A2FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04E204B31D52C7C70078A2FE /* Parameter.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		04E204B81D52CA910078A2FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04E204B11D52C76F0078A2FE /* ParametersController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04E204B91D52CACA0078A2FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04E204BA1D52CF1F0078A2FE /* ParametersViewController.swift */,
+				04E204B51D52C9E70078A2FE /* ParameterTableViewCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E204861D52B68E0078A2FE /* ViewController.swift in Sources */,
+				04E204B21D52C76F0078A2FE /* ParametersController.swift in Sources */,
+				04E204B61D52C9E70078A2FE /* ParameterTableViewCell.swift in Sources */,
+				04E204BB1D52CF1F0078A2FE /* ParametersViewController.swift in Sources */,
 				04E204841D52B68E0078A2FE /* AppDelegate.swift in Sources */,
+				04E204B41D52C7C70078A2FE /* Parameter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
