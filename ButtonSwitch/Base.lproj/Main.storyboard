@@ -74,14 +74,13 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="6mc-j9-Vub" firstAttribute="top" secondItem="Z66-fM-kVa" secondAttribute="top" id="7M2-TC-JYi"/>
-                                                <constraint firstItem="neY-Ob-aWT" firstAttribute="trailing" secondItem="Z66-fM-kVa" secondAttribute="trailingMargin" id="BRS-uD-6g1"/>
                                                 <constraint firstItem="6mc-j9-Vub" firstAttribute="centerY" secondItem="Z66-fM-kVa" secondAttribute="centerY" id="FKk-2m-Bzz"/>
                                                 <constraint firstItem="dS2-ZJ-sxK" firstAttribute="top" secondItem="Z66-fM-kVa" secondAttribute="topMargin" id="QiH-5N-k1L"/>
+                                                <constraint firstItem="neY-Ob-aWT" firstAttribute="trailing" secondItem="Z66-fM-kVa" secondAttribute="trailingMargin" id="Rij-hU-oYc"/>
                                                 <constraint firstItem="6mc-j9-Vub" firstAttribute="centerY" secondItem="dS2-ZJ-sxK" secondAttribute="centerY" id="Sm1-jv-Vrc"/>
                                                 <constraint firstItem="dS2-ZJ-sxK" firstAttribute="leading" secondItem="6mc-j9-Vub" secondAttribute="trailing" constant="8" symbolic="YES" id="TKa-fS-cT6"/>
-                                                <constraint firstItem="neY-Ob-aWT" firstAttribute="trailing" secondItem="Z66-fM-kVa" secondAttribute="trailingMargin" id="YWZ-Vk-4dW"/>
+                                                <constraint firstItem="neY-Ob-aWT" firstAttribute="centerY" secondItem="dS2-ZJ-sxK" secondAttribute="centerY" id="Wki-HN-vns"/>
                                                 <constraint firstItem="6mc-j9-Vub" firstAttribute="leading" secondItem="Z66-fM-kVa" secondAttribute="leading" id="amL-7g-U3W"/>
-                                                <constraint firstItem="neY-Ob-aWT" firstAttribute="centerY" secondItem="dS2-ZJ-sxK" secondAttribute="centerY" id="rTg-KG-o1v"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
@@ -96,9 +95,8 @@
                                                     <exclude reference="amL-7g-U3W"/>
                                                     <exclude reference="QiH-5N-k1L"/>
                                                     <exclude reference="TKa-fS-cT6"/>
-                                                    <exclude reference="BRS-uD-6g1"/>
-                                                    <exclude reference="YWZ-Vk-4dW"/>
-                                                    <exclude reference="rTg-KG-o1v"/>
+                                                    <exclude reference="Rij-hU-oYc"/>
+                                                    <exclude reference="Wki-HN-vns"/>
                                                 </mask>
                                             </variation>
                                             <variation key="widthClass=compact">
@@ -114,9 +112,8 @@
                                                     <include reference="amL-7g-U3W"/>
                                                     <include reference="QiH-5N-k1L"/>
                                                     <include reference="TKa-fS-cT6"/>
-                                                    <include reference="BRS-uD-6g1"/>
-                                                    <include reference="YWZ-Vk-4dW"/>
-                                                    <include reference="rTg-KG-o1v"/>
+                                                    <include reference="Rij-hU-oYc"/>
+                                                    <include reference="Wki-HN-vns"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -164,7 +161,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="ttview" destination="MkC-YV-frL" id="aEd-nZ-k1y"/>
+                        <outlet property="tableViewOutl" destination="MkC-YV-frL" id="qha-yo-Mkp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

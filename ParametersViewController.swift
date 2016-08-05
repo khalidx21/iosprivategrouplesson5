@@ -8,9 +8,11 @@
 
 import UIKit
 
-class ParametersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,ParameterTableViewCellDelegate {
+class ParametersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, ParameterTableViewCellDelegate {
     
-    @IBOutlet weak var tableViewOutlet: UITableView!
+    @IBOutlet weak var tableViewOutl: UITableView!
+    //@IBOutlet weak var tableViewOutlet: UITableView!
+    
     var tableViewId = "TableCellId"
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,17 +35,24 @@ class ParametersViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     func parameterChanged(cell: ParameterTableViewCell, selected: Bool) {
-        
+      
         guard let parameter = cell.parameter
-            ,cellIndexPath = tableViewOutlet.indexPathForCell(cell) else { return }
+            ,cellIndexPath = tableViewOutl.indexPathForCell(cell) else { return }
         
-        tableViewOutlet.beginUpdates()
+        tableViewOutl.beginUpdates()
         ParametersController.sharedInstance.updateParameter(parameter , selected: cell.switchTapped.on)
-        tableViewOutlet.reloadRowsAtIndexPaths([cellIndexPath], withRowAnimation: .Automatic)
-        tableViewOutlet.endUpdates()
+        tableViewOutl.reloadRowsAtIndexPaths([cellIndexPath], withRowAnimation: .Automatic)
+        tableViewOutl.endUpdates()
+ 
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+ /*
+        self.tableViewOutlet.registerClass(UITableViewCell.self, forCellReuseIdentifier: tableViewId)
+        self.tableViewOutlet.delegate = self
+        self.tableViewOutlet.dataSource = self
+ */
+ 
     }
 }
