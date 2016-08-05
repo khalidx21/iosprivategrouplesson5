@@ -103,13 +103,13 @@
 		04E204821D52B68E0078A2FE /* ButtonSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				04E204831D52B68E0078A2FE /* AppDelegate.swift */,
 				04E204871D52B68E0078A2FE /* Main.storyboard */,
+				04E204831D52B68E0078A2FE /* AppDelegate.swift */,
+				04E2048C1D52B68E0078A2FE /* LaunchScreen.storyboard */,
 				04E204B81D52CA910078A2FE /* Controller */,
 				04E204B91D52CACA0078A2FE /* Views */,
 				04E204B71D52CA250078A2FE /* Model */,
 				04E2048A1D52B68E0078A2FE /* Assets.xcassets */,
-				04E2048C1D52B68E0078A2FE /* LaunchScreen.storyboard */,
 				04E2048F1D52B68E0078A2FE /* Info.plist */,
 			);
 			path = ButtonSwitch;
@@ -518,6 +518,7 @@
 				04E204AA1D52B68E0078A2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04E204AB1D52B68E0078A2FE /* Build configuration list for PBXNativeTarget "ButtonSwitchTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				04E204AD1D52B68E0078A2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04E204AE1D52B68E0078A2FE /* Build configuration list for PBXNativeTarget "ButtonSwitchUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				04E204B01D52B68E0078A2FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

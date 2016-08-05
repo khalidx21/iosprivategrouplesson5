@@ -16,12 +16,10 @@ class Parameter {
     var name: String
     var switchIsSet: Bool
     
-    
     init (name: String, switchIsSet: Bool, image: UIImage ) {
         
         self.name = name
         self.switchIsSet = switchIsSet
         self.image = image
-        
     }
 }
